@@ -1,0 +1,1 @@
+import{NextResponse}from"next/server";import{errorResponse,requireUser}from"@/lib/api";import{deleteConnection}from"@/lib/shopify/oauth";export async function POST(){try{const u=await requireUser();return await deleteConnection(u.email),NextResponse.json({ok:!0})}catch(e){return errorResponse(e)}}

@@ -1,0 +1,1 @@
+export default{turbopack:{rules:{"*.css":{loaders:["@tailwindcss/turbopack"],as:"*.css"}}},serverExternalPackages:["@libsql/client"],outputFileTracingIncludes:{"/api/ai/**":["./skills/**/*"],"/api/settings":["./skills/**/*"]}};
